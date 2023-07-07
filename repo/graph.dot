@@ -55,6 +55,7 @@ digraph G {
   "@kie-tools/dashbuilder-component-victory-charts" [ color = "black", fontcolor = "black", style = "dashed, rounded" ];
   "@kie-tools/dashbuilder-component-dev" [ color = "blue", fontcolor = "blue", style = "rounded" ];
   "@kie-tools/dashbuilder-component-echarts-base" [ color = "blue", fontcolor = "blue", style = "rounded" ];
+  "@kie-tools/dashbuilder-component-vega-lite" [ color = "black", fontcolor = "black", style = "dashed, rounded" ];
   "@kie-tools/dashbuilder-editor" [ color = "blue", fontcolor = "blue", style = "rounded" ];
   "@kie-tools/dashbuilder-language-service" [ color = "blue", fontcolor = "blue", style = "rounded" ];
   "@kie-tools/yaml-language-server" [ color = "blue", fontcolor = "blue", style = "rounded" ];
@@ -205,6 +206,10 @@ digraph G {
   "@kie-tools/dashbuilder-component-uniforms" -> "@kie-tools/uniforms-patternfly" [ style = "solid", color = "black" ];
   "@kie-tools/dashbuilder-component-uniforms" -> "@kie-tools-core/webpack-base" [ style = "dashed", color = "black" ];
   "@kie-tools/dashbuilder-component-uniforms" -> "@kie-tools/dashbuilder-component-dev" [ style = "dashed", color = "black" ];
+  "@kie-tools/dashbuilder-component-vega-lite" -> "@kie-tools/dashbuilder-component-echarts-base" [ style = "solid", color = "black" ];
+  "@kie-tools/dashbuilder-component-vega-lite" -> "@kie-tools-core/patternfly-base" [ style = "dashed", color = "black" ];
+  "@kie-tools/dashbuilder-component-vega-lite" -> "@kie-tools-core/webpack-base" [ style = "dashed", color = "black" ];
+  "@kie-tools/dashbuilder-component-vega-lite" -> "@kie-tools/dashbuilder-component-dev" [ style = "dashed", color = "black" ];
   "@kie-tools/dashbuilder-component-victory-charts" -> "@kie-tools-core/patternfly-base" [ style = "solid", color = "black" ];
   "@kie-tools/dashbuilder-component-victory-charts" -> "@kie-tools-core/webpack-base" [ style = "dashed", color = "black" ];
   "@kie-tools/dashbuilder-component-victory-charts" -> "@kie-tools/dashbuilder-component-dev" [ style = "dashed", color = "black" ];
